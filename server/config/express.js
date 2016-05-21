@@ -12,8 +12,8 @@ module.exports = function() {
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
 
-  // using the express-load to load the models and controllers and routes
-  load('models', {cwd: 'server'})
+  // using the express-load to load the dao and controllers and routes
+  load('dao', {cwd: 'server'})
     .then('controllers')
     .then('routes')
     .into(app);
