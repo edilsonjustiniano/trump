@@ -16,7 +16,7 @@ module.exports = function() {
     findByName: function(name) {
       var session = db.getSession();
       return session.run("MATCH (user) WHERE user.name =~ {param} RETURN user",
-                          {param: '(?i).*' + name + '.*'}
+        {param: '(?i).*' + name + '.*'}
       ).then(function(result) {
         db.closeSession();
         db.closeDriver();
@@ -24,6 +24,5 @@ module.exports = function() {
       });
     }
   };
-
   return dao;
 };
