@@ -1,0 +1,12 @@
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+/.idea
+.editorconfig
+.gitattributes
+.jshintrc
+.jscsrc
+.travis.yml
+.yo-rc.json
