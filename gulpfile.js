@@ -20,14 +20,14 @@ var paths = {
   test: ['test/spec/**/*.js'],
   testRequire: [
     // bower:js
-    /*yeoman.app +*/ 'bower_components/angular/angular.js',
-    /*yeoman.app +*/ 'bower_components/angular-animate/angular-animate.js',
-    /*yeoman.app +*/ 'bower_components/angular-mocks/angular-mocks.js',
-    /*yeoman.app +*/ 'bower_components/jquery/dist/jquery.js',
-    /*yeoman.app +*/ 'bower_components/bootstrap/dist/js/bootstrap.js',
-    //yeoman.app + 'bower_components/angular-cookies/angular-cookies.js',
-    //yeoman.app + 'bower_components/angular-sanitize/angular-sanitize.js',
-    //yeoman.app + 'bower_components/angular-route/angular-route.js',
+    /*yeoman.app +*/ 'app/vendors/angular/angular.js',
+    /*yeoman.app +*/ 'app/vendors/angular-animate/angular-animate.js',
+    /*yeoman.app +*/ 'app/vendors/angular-mocks/angular-mocks.js',
+    /*yeoman.app +*/ 'app/vendors/jquery/dist/jquery.js',
+    /*yeoman.app +*/ 'app/vendors/bootstrap/dist/js/bootstrap.js',
+    //yeoman.app + 'app/vendors/angular-cookies/angular-cookies.js',
+    //yeoman.app + 'app/vendors/angular-sanitize/angular-sanitize.js',
+    //yeoman.app + 'app/vendors/angular-route/angular-route.js',
     // endbower
     'app/scripts/app.js',
     'app/scripts/**/*.js',
@@ -143,7 +143,7 @@ gulp.task('test', ['start:server:test'], function () {
 gulp.task('bower', function () {
   return gulp.src(paths.views.main)
     .pipe(wiredep({
-      directory: yeoman.app + '/bower_components',
+      directory: yeoman.app + '/app/vendors',
       ignorePath: '..'
     }))
   .pipe(gulp.dest(yeoman.app + '/views'));

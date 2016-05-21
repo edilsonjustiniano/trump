@@ -22,11 +22,11 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // bower:js
-      'bower_components/angular/angular.js',
-      'bower_components/angular-animate/angular-animate.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/jquery/dist/jquery.js',
-      /*yeoman.app +*/ 'bower_components/bootstrap/dist/js/bootstrap.js',
+      'app/vendors/angular/angular.js',
+      'app/vendors/angular-animate/angular-animate.js',
+      'app/vendors/angular-mocks/angular-mocks.js',
+      'app/vendors/jquery/dist/jquery.js',
+      'app/vendors/bootstrap/dist/js/bootstrap.js',
 
       // endbower
       'app/scripts/app.js',

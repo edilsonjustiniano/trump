@@ -2,7 +2,7 @@
 /dist
 /.tmp
 /.sass-cache
-/bower_components
+/app/vendors
 .idea
 .editorconfig
 .gitattributes
