@@ -28,6 +28,7 @@
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
     "lazypipe": "^0.2.4",
+    "morgan": "^1.7.0",
     "open": "0.0.5",
     "phantomjs-prebuilt": "^2.1.7",
     "rimraf": "^2.4.0",
@@ -44,6 +45,7 @@
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "express-load": "^1.1.15",
+    "jsonwebtoken": "^7.0.0",
     "neo4j-driver": "^1.0.1"
   }
 }
